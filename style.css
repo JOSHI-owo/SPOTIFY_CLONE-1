@@ -1,0 +1,119 @@
+body {
+  background-color: antiquewhite;
+  color: aliceblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: wheat;
+}
+nav ul li {
+  padding: 0 13px;
+}
+.brand img {
+  border-radius: 22px;
+  width: 44px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.container {
+min-height: 69.5vh;
+  background-color: black;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  width: 70%;
+  margin: 23px auto;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("bg.jpg");
+}
+
+.bottom {
+  position: sticky;
+  height: 130px;
+  background-color: black;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icons {
+  margin-top: 14px;
+}
+
+.icons i {
+  cursor: pointer;
+}
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+}
+
+.songitemcontainer{
+  margin-top: 74px;
+}
+
+.songitem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  /* width: 80%; */
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+
+.songitem img {
+  width:43px;
+  margin:0 23px;
+  border-radius: 34px;
+}
+
+.timestamp{
+  margin: 0 23px;
+}
+
+.timestamp i{
+  cursor:pointer;
+}
+
+.songinfo{
+  position: absolute;
+  left:10vw;
+  margin-top:3vh;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.songinfo img{
+  /* opacity: 0; */
+  transition: opacity 0.5s ease-in;
+}
+
+#gif{
+  opacity: 0;
+}
