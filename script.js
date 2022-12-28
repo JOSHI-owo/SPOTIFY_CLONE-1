@@ -31,13 +31,13 @@ masterPlay.addEventListener("click", () => {
     audioElement.play();
     masterPlay.classList.remove("fa-play-circle");
     masterPlay.classList.add("fa-pause-circle");
-    masterPlay.innerHTML = `<span>Pause</span>`;
+    // masterPlay.innerHTML = `<span>Pause</span>`;
     gif.style.opacity = 1;
   } else {
     audioElement.pause();
     masterPlay.classList.remove("fa-pause-circle");
     masterPlay.classList.add("fa-play-circle");
-    masterPlay.innerHTML = `<span>Play</span>`;
+    // masterPlay.innerHTML = `<span>Play</span>`;
     gif.style.opacity = 0;
   }
 });
