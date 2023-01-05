@@ -55,11 +55,22 @@ myProgressBar.addEventListener("change", () => {
   audioElement.currentTime =
     (myProgressBar.value * audioElement.duration) / 100;
 });
+
+const makeAllplays = () => {
+  Array.from(document.getElementsByClassName("songItemPlay")).forEach(
+    (element) => {
+      element.classList.remove("fa-pause-circle");
+      element.classList.add("fa-play-circle");
+    }
+  );
+};
+
 Array.from(document.getElementsByClassName("songItemPlay")).forEach(
   (element) => {
     element.addEventListener("click", (e) => {
-      console.log(e.target);
-      e.target.innerHTML = "pause";
+      makeAllplays();
+      e.target.classList.remove("fa-play-circle");
+      e.target.classList.add("fa-pause-circle");
     });
   }
 );
