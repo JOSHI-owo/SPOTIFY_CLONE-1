@@ -117,3 +117,24 @@ min-height: 69.5vh;
 #gif{
   opacity: 0;
 }
+
+.right{
+  position: fixed;
+  top: 22vh;
+  right:30rem;
+  width: 50vh;
+  height: 50vh;
+}
+
+.right img{
+  width: 50vh;
+  width: 50vh;
+  height: 50vh;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width:1750px) {
+  .right{
+    right:21rem;
+  }
+}
